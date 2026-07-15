@@ -1,0 +1,12 @@
+yt-dlp>=2025.1.1
+pandas>=2.1
+matplotlib>=3.8
+groq>=0.13
+pyyaml>=6.0
+python-dotenv>=1.0
+tqdm>=4.66
+# Глубокая транскрибация (этап 04). На CPU large-v3 медленный — см. README.
+faster-whisper>=1.0
+# CUDA-библиотеки для GPU на Windows (в Docker не ставятся — там CPU)
+nvidia-cublas-cu12; sys_platform == 'win32'
+nvidia-cudnn-cu12; sys_platform == 'win32'

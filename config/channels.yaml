@@ -1,0 +1,66 @@
+# ==============================================================
+# КАНАЛЫ-ДОНОРЫ
+# Формат: вертикаль -> список URL страниц /videos канала.
+#
+# Порядок имеет значение: лимит max_videos_per_vertical (settings.yaml)
+# расходуется сверху вниз — самые важные каналы ставь первыми.
+#
+# Все хэндлы ниже проверены yt-dlp 2026-07-14 (живые, вкладка /videos есть).
+# Из исходного списка 30 хэндлов 21 оказался несуществующим (404) и один
+# без вкладки видео — они удалены.
+# ==============================================================
+
+tires:
+  # нишевые шинные RU (ядро)
+  - https://www.youtube.com/@vokoleso/videos
+  - https://www.youtube.com/@kolesopiter/videos
+  - https://www.youtube.com/@pro100kolesa/videos
+  # найдены автоматически по поисковой выдаче YouTube 2026-07-14
+  # (каналы, чьи ролики чаще всего попадают в поиск по шинным запросам)
+  - https://www.youtube.com/@avto-blogger/videos        # Avto-Blogger.ru — 12 попаданий в выдачу
+  - https://www.youtube.com/@tiresexpert/videos         # Шинный Эксперт (искомый «shina_expert»)
+  - https://www.youtube.com/@tishinakolesopiter/videos  # ТиШИНА (второй канал Kolesopiter)
+  - https://www.youtube.com/@darnitza1/videos           # ЭКСПЕРТЫ ГАРАЖЕЙ
+  - https://www.youtube.com/@koleso_ru/videos           # Колесо.ру (искомый «kolesoru»)
+  - https://www.youtube.com/@POKRISHKARU/videos         # POKRISHKARU (искомый «pokryshkaru»)
+  - https://www.youtube.com/@NK_kolesa/videos           # НАКАЧАННЫЕ КОЛЁСА
+  - https://www.youtube.com/@4kolesa.online/videos      # 4 Колеса
+  - https://www.youtube.com/@RikkiTyres/videos          # Rikki Tyres
+  # US/EN доноры (рамка ТЗ: RU, BY, US)
+  - https://www.youtube.com/@tyrereviews/videos         # Tyre Reviews — главный EN-канал о шинах
+  - https://www.youtube.com/@thetirelab/videos          # TheTireLab — независимые тесты
+  - https://www.youtube.com/@tirerack/videos            # Tire Rack — крупный US-ритейлер
+  # украинские (вне рамки RU/BY/US из ТЗ, но тематика/язык близкие)
+  - https://www.youtube.com/@infoshina/videos
+  - https://www.youtube.com/@rezinaua8595/videos
+  # большие общеавтомобильные (шинные ролики вперемешку с обзорами машин)
+  - https://www.youtube.com/@autoreviewru/videos
+  - https://www.youtube.com/@artemspec/videos
+  # ВЫКЛЮЧЕНЫ:
+  # - https://www.youtube.com/@shina-ray/videos   # ушёл от тематики (последние видео — музыка/поздравления)
+  # - https://www.youtube.com/@qazkolesa/videos   # казахстанский: это KZ-сторона gap-анализа, не донор
+  # - https://www.youtube.com/@asshina/videos     # нет вкладки «Видео»
+
+repair:
+  # найдены автоматически по поисковой выдаче YouTube 2026-07-14
+  # (каналы, чьи ролики чаще всего попадают в поиск по ремонтным запросам);
+  # число = попаданий в выдачу по 11 запросам
+  - https://www.youtube.com/@timremont/videos            # Клименко Тимофей — 15
+  - https://www.youtube.com/@Земстандарт/videos          # Земстандарт — 10
+  - https://www.youtube.com/@DOMEO-ru/videos             # DOMEO. Ремонт и дизайн — 6
+  - https://www.youtube.com/@misha_des/videos            # DNEVNIK DIZAINERA — 6
+  - https://www.youtube.com/@Andrey24Makarof/videos      # Ремонт квартир Омск — 6
+  - https://www.youtube.com/@Petrishin-Stroi/videos      # Петришин-Строй — 6
+  - https://www.youtube.com/@Shelnat/videos              # SHELNAT ДИЗАЙН — 5
+  - https://www.youtube.com/@RenovationProcess/videos    # Renovation Process — 5
+  - https://www.youtube.com/@stroyploschadka/videos      # Стройплощадка — 5
+  - https://www.youtube.com/@remontkvpro/videos          # Ремонт квартиры своими руками — 4
+  - https://www.youtube.com/@goodmaster_artem/videos     # GOODMASTER — 4
+  - https://www.youtube.com/@PavelSidorik/videos         # Павел Сидорик. Ремонт и Отделка — 3
+  - https://www.youtube.com/@metla_tambov/videos         # ЗА КОПЕЙКИ (бюджетный ремонт) — 3
+  - https://www.youtube.com/@RomanPoPolam/videos         # Роман по полам — 2
+  - https://www.youtube.com/@Ne-krivo/videos             # Не криво — 2
+  # US/EN доноры (рамка ТЗ: RU, BY, US)
+  - https://www.youtube.com/@houseandhome/videos         # House & Home — интерьеры
+  - https://www.youtube.com/@WhatTheFlipShow/videos      # What The Flip — реновации
+  - https://www.youtube.com/@kenziemac/videos            # kenzie mac — DIY renovation
